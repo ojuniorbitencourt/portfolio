@@ -72,6 +72,7 @@ body {
 .apresentacao__conteudo__texto a {
     text-decoration: none;
     color: var(--cor-terciaria);
+    font-size: 1rem;
 }
 
 .apresentacao__links {
