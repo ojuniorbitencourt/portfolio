@@ -171,3 +171,78 @@ body {
         width: auto;
     }
 }
+/* Aqui eu estou tentando por o music-wave na minha página */
+.music {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music .bar {
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: movement 1.5s ease-in-out infinite;
+}
+
+@keyframes movement {
+    0%, 100% {
+        height: 2px;
+    }
+    50% {
+        height: 80px;
+    }
+}
+
+.music .bar:nth-child(1) {
+    background: var(--cor-secundaria);
+    animation-delay: 1s;
+}
+
+.music .bar:nth-child(2) {
+    background: var(--cor-terciaria);
+    animation-delay: .8s;
+}
+
+.music .bar:nth-child(3) {
+    background: var(--cor-secundaria);
+    animation-delay: .6s;
+}
+
+.music .bar:nth-child(4) {
+    background: var(--cor-terciaria);
+    animation-delay: .4s;
+}
+
+.music .bar:nth-child(5) {
+    background: var(--cor-secundaria);
+    animation-delay: .2s;
+}
+
+.music .bar:nth-child(6) {
+    background: var(--cor-terciaria);
+    animation-delay: .2s;
+}
+
+.music .bar:nth-child(7) {
+    background: var(--cor-secundaria);
+    animation-delay: .4s;
+}
+
+.music .bar:nth-child(8) {
+    background: var(--cor-terciaria);
+    animation-delay: .6s;
+}
+
+.music .bar:nth-child(9) {
+    background: var(--cor-secundaria);
+    animation-delay: .8s;
+}
+
+.music .bar:nth-child(10) {
+    background: var(--cor-terciaria);
+    animation-delay: 1s;
+}
