@@ -160,6 +160,8 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 10px;
+        display: flex;
+        align-items: center;
     }
 
     .apresentacao {
@@ -169,6 +171,8 @@ body {
 
     .apresentacao__conteudo {
         width: auto;
+        display: flex;
+        align-items: center;
     }
 }
 /* Aqui eu estou tentando por o music-wave na minha página */
