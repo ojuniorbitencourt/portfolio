@@ -10,11 +10,25 @@
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
+        <!-- <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__link" href="certificados.html">Certificados</a>
-        </nav>
+        </nav> -->
+        <div class="cabecalho__menu">
+            <nav class="cabecalho__menu__link">
+              <button id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+              </ul>
+            </nav>
+        </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -27,11 +41,11 @@
                     Github
                 </a>
                 <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/lfjrb" target="_blank">
-                    <img src="assets/linkedin.png" alt="Emote do LinkedIn">    
+                    <img src="assets/linkedin.png" alt="Emote do LinkedIn">
                     LinkedIn
                 </a>
                 <a class="apresentacao__links__navegacao" href="https://twitch.com/lfjrb_dev" target="_blank">
-                    <img src="assets/twitch.png" alt="Emote da Twitch">    
+                    <img src="assets/twitch.png" alt="Emote da Twitch">
                     Twitch
                 </a>
             </div>
@@ -51,6 +65,8 @@
                 <div class="bar"></div>
             </div>
         </section>
+        
+        <script src="js/main.js"></script>
     </main>
     <footer class="rodape">
         <p>

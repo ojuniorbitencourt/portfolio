@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-primaria: #303841;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #4FB9FC;
+    --cor-hover: #3A4750;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -41,16 +41,86 @@ body {
 }
 
 .cabecalho__menu__link:hover {
-    color: white;
+    color: var(--cor-secundaria);
 }
 
+/* Estilizando o botão do menu */
+#menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Estilizando os ícones do botão */
+  #menu-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: var(--cor-secundaria);
+  }
+  
+  /* Estilizando o menu quando escondido */
+  #menu {
+    display: none;
+    /* position: absolute; */
+    top: calc(100% + 10px);
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: var(--cor-primaria);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    width: auto;
+    transform: translateX(0);
+  }
+  
+  /* Estilizando os itens do menu */
+  #menu li {
+    padding: 10px;
+    font-style: italic;
+  }
+  
+  /* Estilizando os links do menu */
+  #menu li a {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: var(--tamanho-fonte-24px);
+    font-family: var(--fonte-secundaria);
+  }
+  
+    /* Estilizando o menu quando exibido */
+    #menu.show {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    position: relative;
+  }
+
 .apresentacao {
-    padding: 5% 15%;
+    padding: 1% 15%;
     gap: 82px;
     align-items: center;
     display: flex;
+    text-align: center;
     justify-content: space-between;
 }
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
@@ -61,16 +131,11 @@ body {
     color: var(--cor-terciaria);
 }
 
-.apresentacao__conteudo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 
 .apresentacao__conteudo__texto {
     font-size: var(--tamanho-fonte-24px);
     font-family: var(--fonte-secundaria);
+    list-style-type: none;
 }
 
 .apresentacao__conteudo__texto a {
@@ -107,9 +172,9 @@ body {
     border-radius: 8px;
     font-size: var(--tamanho-fonte-24px);
     font-weight: 600;
-    border: 2px solid #22D4FD;
-    padding: 21.5px 0;
-    color: #F6F6F6;
+    border: 2px solid var(--cor-secundaria);
+    padding: 14px 0;
+    color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
 }
 
@@ -119,7 +184,7 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: 70%;
     transform: translatey(0px);
     animation: float 5s ease-in-out infinite;
 }
@@ -148,7 +213,7 @@ body {
 
 .rodape__a {
     text-decoration: none;
-    color: #000000;
+    color: var(--cor-primaria);
 }
 
 @media (max-width: 1200px) {
@@ -177,7 +242,7 @@ body {
 }
 /* Aqui eu estou tentando por o music-wave na minha página */
 .music {
-    width: 300px;
+    width: 450px;
     height: 200px;
     position: relative;
     display: inline-flex;
