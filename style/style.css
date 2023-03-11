@@ -40,6 +40,10 @@ body {
     text-decoration: none;
 }
 
+.cabecalho__menu__link:hover {
+    color: white;
+}
+
 .apresentacao {
     padding: 5% 15%;
     gap: 82px;
@@ -75,6 +79,10 @@ body {
     font-size: 1rem;
 }
 
+.apresentacao__conteudo__texto__white:hover {
+    color: white;
+}
+
 .apresentacao__links {
     display: flex;
     flex-direction: column;
@@ -105,7 +113,7 @@ body {
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
     border: 3px solid var(--cor-terciaria);
 }
@@ -136,6 +144,11 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: var(--tamanho-fonte-24px);
     font-weight: 400;
+}
+
+.rodape__a {
+    text-decoration: none;
+    color: #000000;
 }
 
 @media (max-width: 1200px) {
