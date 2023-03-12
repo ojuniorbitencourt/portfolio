@@ -83,6 +83,7 @@ header {
 
 .logo i:hover {
     background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
 }
 
 button {
