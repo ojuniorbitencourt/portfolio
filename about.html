@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <title>Sobre mim</title>
 </head>
 <body>
@@ -15,26 +16,26 @@
         </div>
         <div class="cabecalho__link">
             <li>
-                <a href="#">Home</a>
-                <a href="#">Sobre mim</a>
-                <a href="#">Certificado</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">Sobre mim</a>
+                <a href="certificados.html">Certificado</a>
             </li>
-            <button>Meu contato</button>
+            <button><a href="contact.html">Meu contato</a></button>
         </div>
     </header>
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+        <section class="apresentacao__conteudo__primeiro">
             <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
             <p class="apresentacao__conteudo__texto">Sou um desenvolvedor apaixonado por front-end com experiência em JavaScript, HTML e CSS.</p>
             <p class="apresentacao__conteudo__texto">Estou sempre em busca de novos desafios para aprimorar minhas habilidades e expandir meus conhecimentos. Eu me esforço para entregar um código de alta qualidade que atenda às necessidades do usuário e exceda as expectativas.</p>
             <p class="apresentacao__conteudo__texto">Quando não estou programando, você me encontra explorando novas tendências tecnológicas, experimentando novas ferramentas e estruturas ou contribuindo para projetos de código aberto.</p>
-            <p class="apresentacao__conteudo__texto">Vamos nos conectar e construir algo incrível juntos!
-
-            </p>
+            <p class="apresentacao__conteudo__texto">Vamos nos conectar e construir algo incrível juntos!</p>
         </section>
-        <section class="apresentacao__conteudo">
+        <section class="apresentacao__conteudo__segundo">
             <img class="apresentacao__imagem" src="assets/jr.png" alt="Foto do Júnior">
-            <div class="music">
+            <audio id="audio" src="assets/progmalite-reincarnation.mp3"></audio>
+                <button onclick="playAudio()">Tocar Música</button>
+                <div class="music">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>

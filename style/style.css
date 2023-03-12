@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 :root {
     --cor-primaria: #40513B;
@@ -6,29 +6,25 @@
     --cor-terciaria: #9DC08B;
     --cor-hover: #609966;
 
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
-
-    --tamanho-fonte-24px: 1.5rem;
+    --font-primaria: 'Poppins', sans-serif;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: var(--font-primaria);
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
     overflow: hidden;
 }
 
 .background {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-color: #181823;
+    background: var(--cor-primaria);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -38,10 +34,10 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    max-width: 100%;
     align-items: center;
+    max-width: 100%;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
 }
 
 .cabecalho__link {
@@ -49,41 +45,51 @@ header {
     gap: 3rem;
     font-weight: 300;
     cursor: pointer;
-}
-
-.cabecalho__link li a {
-    padding: 10px;
+    align-items: center;
+    justify-content: space-around;    
+    transition: 0.5s;
 }
 
 .cabecalho__link a {
-    color: var(--cor-secundaria);
-    font-size: 12px;
+    color: var(--cor-terciaria);
 }
 
-.cabecalho__link a:hover {
+.cabecalho__link li a {
+    font-size: 1rem;
+    padding: 10px;
+    padding: 10px;
+}
+
+.cabecalho__link a:hover,
+.cabecalho__link a:focus,
+.cabecalho__link a:active {
     color: var(--cor-hover);
     transition: 0.3s all;
 }
 
-.logo {
+.logo i {
     height: 40px;
     width: 40px;
     background: transparent;
-    border: 1px solid var(--cor-terciaria);
+    border: 1px solid var(--cor-);
     color: var(--cor-terciaria);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 1.5em;
     cursor: pointer;
+}
+
+.logo i:hover {
+    background-color: var(--cor-hover);
 }
 
 button {
     color: var(--cor-terciaria);
     background: transparent;
     border: solid 1px var(--cor-terciaria);
-    padding: 5px;
+    padding: 7px;
     border-radius: 15px;
     font-size: 12px;
     width: 150px;
@@ -92,9 +98,63 @@ button {
 
 button:hover {
     background-color: var(--cor-hover);
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
     transition: 0.5s;
 }
+
+.container__text {
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    background-color: var(--cor-secundaria);
+    margin: 5% ;
+    margin-bottom: 47vh;
+    border-radius: 1%;
+}
+
+.text h1 {
+    color: var(--cor-primaria);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.text span {
+    color: var(--cor-hover);
+}
+
+.text p {
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.redes__sociais a{
+    color: var(--cor-hover);
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 10px;
+    border-color: var(--cor-terciaria);
+    color: var(--cor-terciaria);
+}
+
+.btn__about {
+    margin-top: 10px;
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+/* .rodape {
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1%;
+} */
 
 .apresentacao {
     padding: 1% 15%;
@@ -105,11 +165,20 @@ button:hover {
     text-align: left;
 }
 
-.apresentacao__conteudo {
-    width: 50%;
+.apresentacao__conteudo__primeiro {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.apresentacao__conteudo__segundo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 2rem;
 }
 
 .apresentacao__conteudo__titulo {
@@ -164,6 +233,7 @@ button:hover {
     padding: 14px 0;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
+    transition: 0.5s;
 }
 
 .apresentacao__links__navegacao:hover {
@@ -172,9 +242,12 @@ button:hover {
 }
 
 .apresentacao__imagem {
-    width: 70%;
-    /* transform: translatey(0px); */
-    /* animation: float 5s ease-in-out infinite; */
+    width: 50%;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -192,7 +265,7 @@ button:hover {
 .rodape {
     padding: 24px;
     color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: var(--tamanho-fonte-24px);
@@ -230,8 +303,8 @@ button:hover {
 }
 /* Aqui eu estou tentando por o music-wave na minha página */
 .music {
-    width: 450px;
-    height: 200px;
+    width: 29.8rem;
+    height: 12.5rem;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -243,6 +316,7 @@ button:hover {
     border-radius: 10px;
     background: white;
     animation: movement 1.5s ease-in-out infinite;
+    animation-play-state: paused;
 }
 
 @keyframes movement {
@@ -302,4 +376,49 @@ button:hover {
 .music .bar:nth-child(10) {
     background: var(--cor-terciaria);
     animation-delay: 1s;
+}
+
+.music.playing .bar {
+    animation-play-state: running;
+}
+
+/* Contatos */
+.apresentacao__contatos {
+    padding: 5% 15%;
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#contatos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--cor-primaria);
+    padding: 50px;
+    text-align: center;
+}
+
+#contatos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#contatos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contatos li {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contatos li strong {
+    font-weight: bold;
+    margin-right: 10px;
 }
