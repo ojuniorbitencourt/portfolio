@@ -29,12 +29,11 @@ body {
 /* Menu */
 header {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     max-width: 100%;
     text-align: center;
     padding-top: 2.5rem;
-    padding-left: 17.5rem;
 }
 
 .cabecalho__link {
