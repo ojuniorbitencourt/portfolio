@@ -262,7 +262,7 @@ button a i {
 .rodape {
     padding: 24px;
     color: var(--cor-terciaria);
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: var(--tamanho-fonte-24px);
