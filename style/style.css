@@ -258,22 +258,6 @@ button a i {
     }
 }
 
-/* Rodapé */
-.rodape {
-    padding: 24px;
-    color: var(--cor-terciaria);
-    background-color: var(--cor-secundaria);
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: var(--tamanho-fonte-24px);
-    font-weight: 400;
-}
-
-.rodape__a {
-    text-decoration: none;
-    color: var(--cor-primaria);
-}
-
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 10%;
@@ -419,4 +403,20 @@ button a i {
 #contatos li strong {
     font-weight: bold;
     margin-right: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-fonte-24px);
+    font-weight: 400;
+}
+
+.rodape__a {
+    text-decoration: none;
+    color: var(--cor-primaria);
 }
