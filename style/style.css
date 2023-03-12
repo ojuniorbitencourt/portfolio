@@ -23,7 +23,14 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+html {
+    height: 100%;
+    margin: 0;
 }
 
 /* Menu */
@@ -234,7 +241,7 @@ button a i {
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: 55%;
     border: 1px solid var(--cor-primaria);
     border-radius: 50%;
     background-color: var(--cor-primaria);
@@ -408,17 +415,17 @@ button a i {
 /* Rodapé */
 .rodape {
     padding: 0.5rem;
-    color: var(--cor-terciaria);
-    background-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    background-color: #394436;
     text-align: center;
     font-family: var(--fonte-primaria);
     font-size: var(--tamanho-fonte-24px);
     font-weight: 400;
-
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 50px;
 }
 
 .rodape__a {
