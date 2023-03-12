@@ -200,7 +200,7 @@ button a i {
 
 .apresentacao__links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     justify-content: space-between;
     gap: 12px;
