@@ -407,13 +407,18 @@ button a i {
 
 /* Rodapé */
 .rodape {
-    padding: 24px;
+    padding: 0.5rem;
     color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
     text-align: center;
     font-family: var(--fonte-primaria);
     font-size: var(--tamanho-fonte-24px);
     font-weight: 400;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .rodape__a {
