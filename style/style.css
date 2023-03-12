@@ -19,25 +19,22 @@
 }
 
 body {
-    overflow: hidden;
-}
-
-.background {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background: var(--cor-primaria);
+    background-color: var(--cor-primaria);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
 }
 
+/* Menu */
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
     max-width: 100%;
     text-align: center;
     padding-top: 2.5rem;
+    padding-left: 17.5rem;
 }
 
 .cabecalho__link {
@@ -67,6 +64,7 @@ header {
     transition: 0.3s all;
 }
 
+/* Logo */
 .logo i {
     height: 40px;
     width: 40px;
@@ -85,7 +83,7 @@ header {
     background-color: var(--cor-hover);
     color: var(--cor-secundaria);
 }
-
+/* Botões */
 button {
     color: var(--cor-terciaria);
     background: transparent;
@@ -103,6 +101,11 @@ button:hover {
     transition: 0.5s;
 }
 
+button a,
+button a i {    
+    color: var(--cor-terciaria);
+}
+
 .container__text {
     padding: 20px 20px 20px 20px;
     text-align: left;
@@ -114,7 +117,7 @@ button:hover {
 
 .text h1 {
     color: var(--cor-primaria);
-    margin-top: 10px;
+    margin-top: 0.6rem;
     text-align: center;
 }
 
@@ -126,40 +129,34 @@ button:hover {
     color: var(--cor-primaria);
     font-size: 1.5rem;
     font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 
 .redes__sociais a{
     color: var(--cor-hover);
-    padding: 10px;
+    padding: 0.6rem;
     margin-top: 5px;
     font-size: 2em;
     text-align: center;
 }
 
 .btn {
-    margin-top: 10px;
+    margin-top: 0.6rem;
     border-color: var(--cor-terciaria);
     color: var(--cor-terciaria);
 }
 
 .btn__about {
-    margin-top: 10px;
+    margin-top: 0.6rem;
     border-color: var(--cor-primaria);
     color: var(--cor-primaria);
 }
 
-/* .rodape {
-    background-color: var(--cor-terciaria);
-    text-align: center;
-    margin-bottom: 0;
-    padding: 1%;
-} */
-
+/* Apresentacao */
 .apresentacao {
     padding: 1% 15%;
-    gap: 82px;
+    gap: 5.1rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -170,7 +167,7 @@ button:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao__conteudo__segundo {
@@ -178,7 +175,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
     padding-top: 2rem;
 }
 
@@ -186,11 +183,6 @@ button:hover {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
-
-.titulo-destaque {
-    color: var(--cor-terciaria);
-}
-
 
 .apresentacao__conteudo__texto {
     font-size: var(--tamanho-fonte-24px);
@@ -210,9 +202,9 @@ button:hover {
 .apresentacao__links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
-    gap: 32px;
+    gap: 12px;
 }
 
 .apresentacao__links__substituto {
@@ -224,14 +216,14 @@ button:hover {
 .apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     width: 50%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: var(--tamanho-fonte-24px);
     font-weight: 600;
-    border: 2px solid var(--cor-secundaria);
-    padding: 14px 0;
+    border: 0.125rem solid var(--cor-secundaria);
+    padding: 0.875rem 0;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     transition: 0.5s;
@@ -239,7 +231,7 @@ button:hover {
 
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
-    border: 3px solid var(--cor-terciaria);
+    border: 0.1875rem solid var(--cor-terciaria);
 }
 
 .apresentacao__imagem {
@@ -249,6 +241,10 @@ button:hover {
     background-color: var(--cor-primaria);
     transform: translatey(0px);
     animation: float 5s ease-in-out infinite;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
 }
 
 @keyframes float {
@@ -263,9 +259,10 @@ button:hover {
     }
 }
 
+/* Rodapé */
 .rodape {
     padding: 24px;
-    color: var(--cor-primaria);
+    color: var(--cor-terciaria);
     background-color: var(--cor-primaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -302,7 +299,8 @@ button:hover {
         align-items: center;
     }
 }
-/* Aqui eu estou tentando por o music-wave na minha página */
+
+/* Music */
 .music {
     width: 29.8rem;
     height: 12.5rem;
