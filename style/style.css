@@ -190,12 +190,14 @@ button a i {
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
 }
 
 .apresentacao__conteudo__texto {
     font-size: var(--tamanho-fonte-24px);
     font-family: var(--fonte-secundaria);
     list-style-type: none;
+    color: var(--cor-secundaria);
 }
 
 .apresentacao__conteudo__texto a {
