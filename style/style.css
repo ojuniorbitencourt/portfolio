@@ -242,7 +242,7 @@ button a i {
 
 .apresentacao__imagem {
     width: 55%;
-    border: 1px solid var(--cor-primaria);
+    border: 1px solid var(--cor-terciaria);
     border-radius: 50%;
     background-color: var(--cor-primaria);
     transform: translatey(0px);
