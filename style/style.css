@@ -5,6 +5,7 @@
     --cor-secundaria: #EDF1D6;
     --cor-terciaria: #9DC08B;
     --cor-hover: #609966;
+    --cor-menu-footer: #394436;
 
     --font-primaria: 'Poppins', sans-serif;
 }
@@ -40,7 +41,8 @@ header {
     align-items: center;
     max-width: 100%;
     text-align: center;
-    padding-top: 2.5rem;
+    padding: 0.8rem;
+    background-color: var(--cor-menu-footer);
 }
 
 .cabecalho__link {
@@ -414,9 +416,8 @@ button a i {
 
 /* Rodapé */
 .rodape {
-    padding: 0.5rem;
-    color: var(--cor-secundaria);
-    background-color: #394436;
+    padding: 0.8rem;
+    background-color: var(--cor-menu-footer);
     text-align: center;
     font-family: var(--fonte-primaria);
     font-size: var(--tamanho-fonte-24px);
@@ -430,5 +431,5 @@ button a i {
 
 .rodape__a {
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: var(--cor-terciaria);
 }
