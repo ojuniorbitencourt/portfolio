@@ -5,3 +5,4 @@
 ## Tecnologias utilizadas para o desenvolvimento deste projeto:
 - HTML5
 - CSS3
+- JavaScript
