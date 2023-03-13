@@ -68,7 +68,7 @@ header {
 .cabecalho__link a:hover,
 .cabecalho__link a:focus,
 .cabecalho__link a:active {
-    color: var(--cor-hover);
+    color: var(--cor-secundaria);
     transition: 0.3s all;
 }
 
